@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import { useSelector } from 'react-redux';
 import MissionsList from './missionList';
 
@@ -7,7 +7,6 @@ export default function Missions() {
   const list = useSelector((data) => data.reduceMissions.missions);
   Object.entries(list).forEach((book) => {
     const [key, value] = book;
-    console.log(value);
     item.push(
       <MissionsList
         key={key}
