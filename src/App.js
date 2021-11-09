@@ -11,15 +11,15 @@ import './App.css';
 
 function App() {
   const dispatchMissions = useDispatch();
-    useEffect(() => {
+  useEffect(() => {
     dispatchMissions(getMissions());
   }, []);
 
   const dispatchRocket = useDispatch();
-    useEffect(() => {
+  useEffect(() => {
     dispatchRocket(getRockets());
   }, []);
-  
+
   return (
     <Router>
       <div className="App">
