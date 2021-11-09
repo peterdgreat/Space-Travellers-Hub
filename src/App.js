@@ -1,18 +1,25 @@
 import { React, useEffect } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { getMissions } from './redux/missions/missions';
+import { getRockets } from './redux/Rockets/rockets';
 import NavBar from './components/NavBar';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import Profile from './components/Profile';
-import { getMissions } from './redux/missions/missions';
+import './App.css';
 
 function App() {
   const dispatchMissions = useDispatch();
-  useEffect(() => {
+    useEffect(() => {
     dispatchMissions(getMissions());
   }, []);
+
+  const dispatchRocket = useDispatch();
+    useEffect(() => {
+    dispatchRocket(getRockets());
+  }, []);
+  
   return (
     <Router>
       <div className="App">

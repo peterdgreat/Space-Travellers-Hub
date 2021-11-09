@@ -6,20 +6,19 @@ export default function Rockets() {
   const rocketLists = useSelector((state) => state.rocketsReducer.rockets);
 
   return (
-    <div>
-      <ul>
-        {Object.entries(rocketLists).map((data) => {
-          const [key, value] = data;
-          return (
-            <RocketList
-              key={key}
-              title={value.title}
-              description={value.description}
-              image={value.image}
-            />
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="container">
+      {Object.entries(rocketLists).map((data) => {
+        const [key, value] = data;
+        return (
+          <RocketList
+            key={key}
+            title={value.rocket_name}
+            description={value.description}
+            image={value.flickr_images[0]}
+            status={value.active}
+          />
+        );
+      })}
+    </ul>
   );
 }

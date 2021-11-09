@@ -1,26 +1,21 @@
+import axios from 'axios';
+
 const ROCKET_SUCCESS = 'ROCKET_SUCCESS';
 
 const initialState = {
   rockets: [
-    {
-      title: 'Falcon 1',
-      description: 'Falcon 1 is a partially reusable expendable launch vehicle developed and manufactured by SpaceX.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Falcon_1_Demo_Mission.jpg/220px-Falcon_1_Demo_Mission.jpg',
-    },
-    {
-      title: 'Falcon 2',
-      description: 'Falcon 1 is a partially reusable expendable launch vehicle developed and manufactured by SpaceX.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Falcon_1_Demo_Mission.jpg/220px-Falcon_1_Demo_Mission.jpg',
-    },
-    {
-      title: 'Falcon 13',
-      description: 'Falcon 1 is a partially reusable expendable launch vehicle developed and manufactured by SpaceX.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Falcon_1_Demo_Mission.jpg/220px-Falcon_1_Demo_Mission.jpg',
-    },
 
   ],
 };
 
+export const getRockets = () => async (dispatch) => {
+  const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+  console.log(response);
+  dispatch({
+    type: ROCKET_SUCCESS,
+    payload: response.data,
+  });
+};
 const rocketsReducer = (state = initialState, action) => {
   switch (action.type) {
     case ROCKET_SUCCESS:
