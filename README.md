@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers Hub
 
-## Available Scripts
+> Display missions and rockets, attend or leave missions, also available to make reservations on rockets.
 
-In the project directory, you can run:
+![](./screenshots/rockets.png)
 
-### `yarn start`
+> Display Rockets from API and make reservations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](./screenshots/missions.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> Display Missions from API and make reservations
 
-### `yarn test`
+![](./screenshots/profile.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Display profile info
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 👷🏻 Built using
+    - React
+    - JavaScript
+    - Redux
+    - VSCode
+    - GIT
+    - Github
+    - CSS
+    - Bootstrap
+    - Linters
+  
+## 🌐 Live Preview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> [Bookstore](https://competent-lovelace-5d8d22.netlify.app/books)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚩 Getting Started
 
-### `yarn eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### ✅ Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Make sure that **Node JS** is installed in your computer (try to run _npm -v_ from your prompt), if not you can install it from [here.](https://nodejs.org/en/download/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [Download](https://github.com/peterdgreat/Space-Travellers-Hub/archive/refs/heads/development.zip) and unzip **or** [clone this repository](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 👨🏻‍🔧 Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open your terminal and move to the root of the project, using ```$ cd``` command.
+- Run ```$ npm install``` to install all dependencies.
+- You must run ```$ npm start``` to start live server
+- Then your browser will open a local copy
 
-### Code Splitting
+### 🔌 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- You can go to http://127.0.0.1:3000/ to use the app locally
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 👨🏻‍💻 Kenny Ortega
 
-### Making a Progressive Web App
+- GitHub: [kensayo](https://github.com/kensayo)
+- Twitter: [@kensayo](https://twitter.com/kensayo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kennyortega/)
+  
+### 👨🏿‍💻 Ajayi Peter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@githubhandle](https://github.com/peterdgreat)
+- Twitter: [@twitterhandle](https://twitter.com/dev_Peter_O)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ajayi-peter-4391ab1b5)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### 🤝🏻 Contributions and issues are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is [MIT](./MIT.md) licensed.

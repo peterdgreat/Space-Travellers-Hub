@@ -1,6 +1,4 @@
-table,
-th,
-td {
+.borderTable {
   border: 1px solid black !important;
   border-collapse: collapse;
 }

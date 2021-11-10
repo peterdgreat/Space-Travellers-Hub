@@ -20,13 +20,13 @@ export default function Missions() {
   });
   return (
     <div className="mx-auto">
-      <table className="table table-striped w-75 mx-auto">
+      <table className="table border table-striped w-75 mx-auto">
         <thead>
           <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th aria-label="empty space" />
+            <th className="borderTable">Mission</th>
+            <th className="borderTable">Description</th>
+            <th className="borderTable">Status</th>
+            <th className="borderTable" aria-label="empty space" />
           </tr>
         </thead>
         <tbody>
