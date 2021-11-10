@@ -19,8 +19,8 @@ export default function Missions() {
     );
   });
   return (
-    <div className="mx-auto">
-      <table className="table border table-striped w-75 mx-auto">
+    <div className="container">
+      <table className="table border table-striped w-100 mx-auto">
         <thead>
           <tr>
             <th className="borderTable">Mission</th>

@@ -18,8 +18,8 @@ export default function Profile() {
     projectList.push(<tr><td key={key} className="borderTable">{value.rocket_name}</td></tr>);
   });
   return (
-    <div className="d-flex flex-row justify-content-evenly w-75 mx-auto">
-      <table className="table w-25">
+    <div className="d-flex flex-row justify-content-center container">
+      <table className="table w-40 me-3">
         <thead>
           <tr>
             <th>My Missions</th>
@@ -29,7 +29,7 @@ export default function Profile() {
           {myMissionList}
         </tbody>
       </table>
-      <table className="w-25 table">
+      <table className="w-40 table">
         <thead>
           <tr>
             <th>My Rockets</th>
