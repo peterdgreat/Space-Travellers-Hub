@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import planet from './planet.png';
 
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg  bg">
     <div className="container">
 
       <NavLink className="nav-Link logo" to="/">
-        {/* <img src="../components/planet.png" alt="Logo Img" /> */}
+        <img src={planet} alt="Logo Img" />
         Space Travelers Hub
       </NavLink>
 
