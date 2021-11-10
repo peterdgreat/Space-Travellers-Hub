@@ -9,6 +9,13 @@ export default function Profile() {
     const [key, value] = mission;
     myMissionList.push(<tr><td key={key}>{value.mission_name}</td></tr>);
   });
+  const listProject = useSelector((data) => data.rocketsReducer.rockets)
+    .filter((rocket) => rocket.reserved === true);
+  const projectList = [];
+  Object.entries(listProject).forEach((rocket) => {
+    const [key, value] = rocket;
+    projectList.push(<tr><td key={key}>{value.rocket_name}</td></tr>);
+  });
   return (
     <div className="d-flex flex-row justify-content-evenly">
       <table>
@@ -28,7 +35,7 @@ export default function Profile() {
           </tr>
         </thead>
         <tbody>
-          {myMissionList}
+          {projectList}
         </tbody>
       </table>
     </div>

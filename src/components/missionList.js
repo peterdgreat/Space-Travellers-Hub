@@ -4,7 +4,10 @@ import { attendMission, leaveMission } from '../redux/missions/missions';
 
 const MissionsList = (props) => {
   const {
-    mission, description, reserved,
+    mission,
+    description,
+    reserved,
+    id,
   } = props;
   const message = (st) => {
     if (st) {
@@ -30,7 +33,13 @@ const MissionsList = (props) => {
         {message(reserved)}
       </td>
       <td className="col-2 align-middle text-center">
-        <button className={reserved ? 'missionButton leave' : 'missionButton'} type="button" onClick={() => joinMission(props.id)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
+        <button
+          className={reserved ? 'missionButton leave' : 'missionButton'}
+          type="button"
+          onClick={() => joinMission(id)}
+        >
+          {reserved ? 'Leave Mission' : 'Join Mission'}
+        </button>
       </td>
     </tr>
   );
