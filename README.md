@@ -30,7 +30,7 @@
   
 ## 🌐 Live Preview
 
-> [Space Travellers Hub]()
+> [Space Travellers Hub](https://space-travellers.netlify.app/)
 
 ## 🚩 Getting Started
 
