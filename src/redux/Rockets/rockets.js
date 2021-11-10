@@ -10,7 +10,6 @@ const initialState = {
 
 export const getRockets = () => async (dispatch) => {
   const response = await axios.get('https://api.spacexdata.com/v3/rockets');
-  console.log(response);
   dispatch({
     type: ROCKET_SUCCESS,
     payload: response.data,

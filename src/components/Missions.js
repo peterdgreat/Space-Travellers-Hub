@@ -1,24 +1,26 @@
 import { React } from 'react';
 import { useSelector } from 'react-redux';
 import MissionsList from './missionList';
+import '../css/missions.css';
 
 export default function Missions() {
   const item = [];
   const list = useSelector((data) => data.reduceMissions.missions);
-  Object.entries(list).forEach((book) => {
-    const [key, value] = book;
+  Object.entries(list).forEach((mission) => {
+    const [key, value] = mission;
     item.push(
       <MissionsList
         key={key}
         mission={value.mission_name}
         description={value.description}
-        status={value.status}
+        reserved={value.reserved}
+        id={value.mission_id}
       />,
     );
   });
   return (
-    <div>
-      <table className="table table-striped">
+    <div className="mx-auto">
+      <table className="table table-striped w-75 mx-auto">
         <thead>
           <tr>
             <th>Mission</th>
