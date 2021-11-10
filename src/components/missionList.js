@@ -32,7 +32,13 @@ const MissionsList = (props) => {
         {message(reserved)}
       </td>
       <td className="col-2 align-middle text-center">
-        <button className={reserved ? 'missionButton leave' : 'missionButton'} type="button" onClick={() => joinMission(props.id)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
+        <button
+          className={reserved ? 'missionButton leave' : 'missionButton'}
+          type="button"
+          onClick={() => joinMission(props.id)}
+        >
+          {reserved ? 'Leave Mission' : 'Join Mission'}
+        </button>
       </td>
     </tr>
   );
