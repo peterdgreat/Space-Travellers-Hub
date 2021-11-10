@@ -1,0 +1,11 @@
+.navbar-brand {
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sp-b {
+  border-right: 1px solid #484b4f;
+}
