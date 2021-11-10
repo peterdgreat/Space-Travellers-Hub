@@ -4,7 +4,9 @@ import { attendMission, leaveMission } from '../redux/missions/missions';
 
 const MissionsList = (props) => {
   const {
-    mission, description, reserved,
+    mission,
+    description,
+    reserved,
   } = props;
   const message = (st) => {
     if (st) {
