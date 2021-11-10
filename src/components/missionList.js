@@ -7,8 +7,14 @@ const MissionsList = (props) => {
     mission, description, reserved,
   } = props;
   const message = (st) => {
-    if (st) return 'Active Member';
-    return 'NOT MEMBER';
+    if (st) {
+      return (
+        <span className="badge bg-primary">Active Member</span>
+      );
+    }
+    return (
+      <span className="badge bg-secondary">NOT A MEMBER</span>
+    );
   };
   const dispatch = useDispatch();
   const joinMission = (id) => {
@@ -16,15 +22,15 @@ const MissionsList = (props) => {
   };
   return (
     <tr>
-      <th>{mission}</th>
-      <td>
+      <th className="col-2">{mission}</th>
+      <td className="col-6">
         {description}
       </td>
-      <td>
+      <td className="col-2 align-middle text-center">
         {message(reserved)}
       </td>
-      <td>
-        <button type="button" onClick={() => joinMission(props.id)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
+      <td className="col-2 align-middle text-center">
+        <button className={reserved ? 'missionButton leave' : 'missionButton'} type="button" onClick={() => joinMission(props.id)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
       </td>
     </tr>
   );

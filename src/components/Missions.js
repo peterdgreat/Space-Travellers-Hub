@@ -1,6 +1,7 @@
 import { React } from 'react';
 import { useSelector } from 'react-redux';
 import MissionsList from './missionList';
+import '../css/missions.css';
 
 export default function Missions() {
   const item = [];
@@ -18,8 +19,8 @@ export default function Missions() {
     );
   });
   return (
-    <div>
-      <table className="table table-striped">
+    <div className="mx-auto">
+      <table className="table table-striped w-75 mx-auto">
         <thead>
           <tr>
             <th>Mission</th>
