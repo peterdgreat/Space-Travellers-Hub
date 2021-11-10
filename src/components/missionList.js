@@ -25,14 +25,14 @@ const MissionsList = (props) => {
   };
   return (
     <tr>
-      <th className="col-2">{mission}</th>
-      <td className="col-6">
+      <th className="borderTable col-2">{mission}</th>
+      <td className="borderTable col-6">
         {description}
       </td>
-      <td className="col-2 align-middle text-center">
+      <td className="borderTable col-2 align-middle text-center">
         {message(reserved)}
       </td>
-      <td className="col-2 align-middle text-center">
+      <td className="borderTable col-2 align-middle text-center">
         <button
           className={reserved ? 'missionButton leave' : 'missionButton'}
           type="button"

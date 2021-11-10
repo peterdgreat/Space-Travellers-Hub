@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../css/profile.css';
 
 export default function Profile() {
   const list = useSelector((data) => data.reduceMissions.missions)
@@ -7,31 +8,31 @@ export default function Profile() {
   const myMissionList = [];
   Object.entries(list).forEach((mission) => {
     const [key, value] = mission;
-    myMissionList.push(<tr><td key={key}>{value.mission_name}</td></tr>);
+    myMissionList.push(<tr><td key={key} className="borderTable">{value.mission_name}</td></tr>);
   });
   const listProject = useSelector((data) => data.rocketsReducer.rockets)
     .filter((rocket) => rocket.reserved === true);
   const projectList = [];
   Object.entries(listProject).forEach((rocket) => {
     const [key, value] = rocket;
-    projectList.push(<tr><td key={key}>{value.rocket_name}</td></tr>);
+    projectList.push(<tr><td key={key} className="borderTable">{value.rocket_name}</td></tr>);
   });
   return (
-    <div className="d-flex flex-row justify-content-evenly">
-      <table>
+    <div className="d-flex flex-row justify-content-evenly w-75 mx-auto">
+      <table className="table w-25">
         <thead>
           <tr>
-            <th>Joined Missions</th>
+            <th>My Missions</th>
           </tr>
         </thead>
         <tbody>
           {myMissionList}
         </tbody>
       </table>
-      <table>
+      <table className="w-25 table">
         <thead>
           <tr>
-            <th>Joined Missions</th>
+            <th>My Rockets</th>
           </tr>
         </thead>
         <tbody>
