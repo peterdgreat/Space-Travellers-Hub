@@ -7,6 +7,7 @@ const MissionsList = (props) => {
     mission,
     description,
     reserved,
+    id,
   } = props;
   const message = (st) => {
     if (st) {
@@ -35,7 +36,7 @@ const MissionsList = (props) => {
         <button
           className={reserved ? 'missionButton leave' : 'missionButton'}
           type="button"
-          onClick={() => joinMission(props.id)}
+          onClick={() => joinMission(id)}
         >
           {reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
