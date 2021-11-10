@@ -7,8 +7,8 @@ const NavBar = () => (
   <nav className="navbar navbar-expand-lg  bg">
     <div className="container">
 
-      <NavLink className="nav-Link logo" to="/">
-        <img src={planet} alt="Logo Img" />
+      <NavLink className="navbar-brand" to="/">
+        <img src={planet} alt="Logo Img" width="54" height="54" className="d-inline-block align-text-top" />
         Space Travelers Hub
       </NavLink>
 

@@ -6,8 +6,8 @@ import '../css/missions.css';
 export default function Missions() {
   const item = [];
   const list = useSelector((data) => data.reduceMissions.missions);
-  Object.entries(list).forEach((book) => {
-    const [key, value] = book;
+  Object.entries(list).forEach((mission) => {
+    const [key, value] = mission;
     item.push(
       <MissionsList
         key={key}
