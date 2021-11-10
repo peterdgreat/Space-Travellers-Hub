@@ -1,12 +1,18 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { attendMission, leaveMission } from '../redux/missions/missions';
 
 const MissionsList = (props) => {
   const {
-    mission, description, status,
+    mission, description, reserved,
   } = props;
   const message = (st) => {
     if (st) return 'Active Member';
     return 'NOT MEMBER';
+  };
+  const dispatch = useDispatch();
+  const joinMission = (id) => {
+    dispatch(reserved ? leaveMission(id) : attendMission(id));
   };
   return (
     <tr>
@@ -15,10 +21,10 @@ const MissionsList = (props) => {
         {description}
       </td>
       <td>
-        {message(status)}
+        {message(reserved)}
       </td>
       <td>
-        <button type="button">Join Missions</button>
+        <button type="button" onClick={() => joinMission(props.id)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
       </td>
     </tr>
   );
@@ -29,5 +35,6 @@ export default MissionsList;
 MissionsList.propTypes = {
   mission: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  status: PropTypes.bool.isRequired,
+  reserved: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
 };

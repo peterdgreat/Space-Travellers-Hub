@@ -12,7 +12,8 @@ export default function Missions() {
         key={key}
         mission={value.mission_name}
         description={value.description}
-        status={value.status}
+        reserved={value.reserved}
+        id={value.mission_id}
       />,
     );
   });
