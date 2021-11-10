@@ -30,7 +30,7 @@
   
 ## 🌐 Live Preview
 
-> [Bookstore](https://competent-lovelace-5d8d22.netlify.app/books)
+> [Space Travellers Hub]()
 
 ## 🚩 Getting Started
 
