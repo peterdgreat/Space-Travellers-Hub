@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './RocketList.css';
 import Button from '@mui/material/Button';
+import { useDispatch } from 'react-redux';
+import { bookRocket } from '../redux/Rockets/rockets';
 
 export default function RocketList(props) {
   const {
@@ -9,11 +11,17 @@ export default function RocketList(props) {
     description,
     image,
     status,
+    id,
   } = props;
+  const dispatch = useDispatch();
 
   const message = status === true ? 'Cancel Reservation' : 'Reserve Rocket';
   const color = status === true ? 'outlined' : 'contained';
   const reserved = status === true ? 'Reserved' : '';
+
+  const handleReserve = () => {
+    dispatch(bookRocket(id));
+  };
   return (
     <li className="row list-unstyled my-4">
       <section className="col-md-4">
@@ -32,7 +40,7 @@ export default function RocketList(props) {
               {description}
             </p>
           </div>
-          <Button variant={color}>
+          <Button variant={color} onClick={handleReserve}>
             {message}
           </Button>
         </div>
@@ -45,4 +53,5 @@ RocketList.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   status: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
 };

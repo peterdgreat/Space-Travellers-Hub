@@ -14,8 +14,9 @@ export default function Rockets() {
             key={key}
             title={value.rocket_name}
             description={value.description}
+            status={value.reserved}
+            id={value.id}
             image={value.flickr_images[0]}
-            status={value.active}
           />
         );
       })}
