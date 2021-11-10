@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './RocketList.css';
+import '../css/RocketList.css';
 import Button from '@mui/material/Button';
 import { useDispatch } from 'react-redux';
 import { bookRocket, leaveRocket } from '../redux/Rockets/rockets';
