@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './RocketList.css';
 import Button from '@mui/material/Button';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from '../redux/Rockets/rockets';
+import { bookRocket, leaveRocket } from '../redux/Rockets/rockets';
 
 export default function RocketList(props) {
   const {
@@ -20,8 +20,9 @@ export default function RocketList(props) {
   const reserved = status === true ? 'Reserved' : '';
 
   const handleReserve = () => {
-    dispatch(bookRocket(id));
+    dispatch(!status ? bookRocket(id) : leaveRocket(id));
   };
+
   return (
     <li className="row list-unstyled my-4">
       <section className="col-md-4">
