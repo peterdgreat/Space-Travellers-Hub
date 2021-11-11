@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets renders correctly 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table border table-striped w-100 mx-auto"
+  >
+    <thead>
+      <tr>
+        <th
+          className="borderTable"
+        >
+          Mission
+        </th>
+        <th
+          className="borderTable"
+        >
+          Description
+        </th>
+        <th
+          className="borderTable"
+        >
+          Status
+        </th>
+        <th
+          aria-label="empty space"
+          className="borderTable"
+        />
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

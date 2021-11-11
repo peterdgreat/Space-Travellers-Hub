@@ -1,0 +1,20 @@
+.borderTable {
+  border: 1px solid black !important;
+  border-collapse: collapse;
+}
+
+span {
+  font-size: 1rem !important;
+}
+
+.missionButton {
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.leave {
+  color: red;
+  border-color: red;
+}
