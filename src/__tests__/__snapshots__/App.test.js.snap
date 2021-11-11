@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbar navbar-expand-lg  bg"
+  >
+    <div
+      className="container"
+    >
+      <a
+        aria-current="page"
+        className="navbar-brand d-flex align-items-center  active"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Logo Img"
+          height="54"
+          src="planet.png"
+          width="54"
+        />
+        <div
+          className="ps-3 fs-2"
+        >
+          Space Travelers Hub 
+        </div>
+      </a>
+      <button
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-bs-target="#navbarNav"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+          />
+        </svg>
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        id="navbarNav"
+      >
+        <ul
+          className="navbar-nav col-12 d-flex-md justify-content-end align-items-center"
+        >
+          <li
+            className="nav-item bdr d-flex align-items-center px-3"
+          >
+            <a
+              activeClassName="fw-bold"
+              aria-current="page"
+              className="nav-Link pt-1 active"
+              href="/"
+              onClick={[Function]}
+            >
+              Rockets
+            </a>
+          </li>
+          <li
+            className="nav-item bdr d-flex align-items-center px-3 sp-b"
+          >
+            <a
+              activeClassName="fw-bold"
+              className="nav-Link pt-1"
+              href="/missions"
+              onClick={[Function]}
+            >
+              Missions
+            </a>
+          </li>
+          <li
+            className="nav-item bdr d-flex align-items-center px-3"
+          >
+            <a
+              activeClassName="fw-bold"
+              className="nav-Link pt-1"
+              href="/profile"
+              onClick={[Function]}
+            >
+              My Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <ul
+    className="container"
+  />
+</div>
+`;
