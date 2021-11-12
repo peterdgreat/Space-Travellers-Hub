@@ -8,37 +8,30 @@ export default function Profile() {
   const myMissionList = [];
   Object.entries(list).forEach((mission) => {
     const [key, value] = mission;
-    myMissionList.push(<tr><td key={key} className="borderTable">{value.mission_name}</td></tr>);
+    myMissionList.push(<li key={key} className="list-group-item">{value.mission_name}</li>);
   });
   const listProject = useSelector((data) => data.rocketsReducer.rockets)
     .filter((rocket) => rocket.reserved === true);
   const projectList = [];
   Object.entries(listProject).forEach((rocket) => {
     const [key, value] = rocket;
-    projectList.push(<tr><td key={key} className="borderTable">{value.rocket_name}</td></tr>);
+    projectList.push(<li key={key} className="list-group-item">{value.rocket_name}</li>);
   });
   return (
     <div className="d-flex flex-row justify-content-center container">
-      <table className="table w-40 me-3">
-        <thead>
-          <tr>
-            <th>My Missions</th>
-          </tr>
-        </thead>
-        <tbody>
+
+      <section className="col-md-6 me-3">
+        <h2>My Missions</h2>
+        <ul className="list-group">
           {myMissionList}
-        </tbody>
-      </table>
-      <table className="w-40 table">
-        <thead>
-          <tr>
-            <th>My Rockets</th>
-          </tr>
-        </thead>
-        <tbody>
+        </ul>
+      </section>
+      <section className="col-md-6 ms-3">
+        <h2> My Rockets</h2>
+        <ul className="list-group">
           {projectList}
-        </tbody>
-      </table>
+        </ul>
+      </section>
     </div>
   );
 }
