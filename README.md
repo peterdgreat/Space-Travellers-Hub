@@ -65,9 +65,9 @@ To get a local copy up and running follow these simple example steps.
   
 ### 👨🏿‍💻 Ajayi Peter
 
-- GitHub: [@githubhandle](https://github.com/peterdgreat)
-- Twitter: [@twitterhandle](https://twitter.com/dev_Peter_O)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ajayi-peter-4391ab1b5)
+- GitHub: [@peterdgreat](https://github.com/peterdgreat)
+- Twitter: [@dev_peter_O](https://twitter.com/dev_Peter_O)
+- LinkedIn: [ajayipeter](https://www.linkedin.com/in/ajayipeter/)
 
 
 
